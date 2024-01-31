@@ -15,6 +15,14 @@
             <div class="d-flex justify-content-center">
                 <h1>Trains</h1>
             </div>
+            <ul>
+                @foreach ($trains as $train)
+                <li>{{$train['company']}}
+                    <br> parte da:
+                    {{$train['departure_station']}}
+                </li>
+                @endforeach
+            </ul>
         </header>
     </div>
 
